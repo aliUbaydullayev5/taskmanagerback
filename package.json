@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "install:all": "npm install && cd taskManagerBack && npm install && cd ../taskManagerFront && npm install",
     "dev:back": "cd taskManagerBack && npm run serve",
     "dev:front": "cd taskManagerFront && npm run dev",
     "dev": "concurrently \"npm run dev:back\" \"npm run dev:front\""
